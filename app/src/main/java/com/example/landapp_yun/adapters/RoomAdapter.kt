@@ -38,12 +38,7 @@ class RoomAdapter(
 
         descriptionTxt.text = roomData.descripsion
         addressAndFloorTxt.text = "${roomData.address} , ${roomData.getFormattedFloor()}"
-
+        priceTxt.text = roomData.getFormattPrice()
         return row
     }
 }
-//층수
-// 1- 이상  => ? 층. => ex.5 : 5층
-// 0 반지하
-// -1 이하 => 지하 ?층 =>ex.-2 :2층
-// Room 클래스 안에서 작업
