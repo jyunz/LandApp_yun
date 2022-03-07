@@ -1,5 +1,6 @@
 package com.example.landapp_yun.datas
 
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -7,7 +8,7 @@ class Room (
     val price: Int,
     val address:String,
     val floor: Int,
-    val descripsion: String) {
+    val descripsion: String) : Serializable {
 
 //가격
 //    1억이상  ex. 28500 =>2억 8500
