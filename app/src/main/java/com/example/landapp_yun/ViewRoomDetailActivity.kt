@@ -20,6 +20,6 @@ class ViewRoomDetailActivity : AppCompatActivity() {
         addressTxt.text = roomData.address
 
         floorTxt.text = roomData.formmatedFloor()
-// 깃허브 확인용 입니다.
+
     }
 }
