@@ -32,6 +32,13 @@ class MainActivity : AppCompatActivity() {
 
             val clickedRoom = mRoomList[position]
             val myIntent = Intent(this,ViewRoomDetailActivity::class.java)
+//            myIntent.putExtra("roomPrice", clickedRoom.price)+층수, 행정구역 등 각각의 목록을 각각 넘겨줘야
+//            하는 상황이 되므로 아래의 함수로 통째로 넘겨준다.
+//           그런데 myIntent등으로 putExtra 를 할 때  우리가 만든 데이터 클래스 등을 넘기면 putExtra가 오류가 남.
+//            => 그래서 상속을 받는것 처럼 만들어주는 것이 Serializable
+//            받아서 사용할때는 getSerializableExtra 로 받아서 데이터 활용.
+//            => 받아낸 데이터를 [as 데이터 클래스] 로 캐스팅 해줘야 정상활동 가능
+
             myIntent.putExtra("room",clickedRoom)
             startActivity(myIntent)
 

@@ -13,7 +13,7 @@ class Room (
 //가격
 //    1억이상  ex. 28500 =>2억 8500
 
-    fun getFormattPrice() : String {
+    fun getFormmatedPrice() : String {
         if (this.price >=10000) {
             val uk = this.price / 10000  // 정수와 정수의 나눗셈은 소숫점을 버리고 몫만 남긴다.
             val rest = this.price % 10000
@@ -33,7 +33,7 @@ class Room (
 // 0 반지하
 // -1 이하 => 지하 ?층 =>ex.-2 :2층
 // Room 클래스 안에서 작업
-    fun getFormattedFloor() : String {
+    fun formmatedFloor() : String {
         if (this.floor >= 1) {
             return "${this.floor}층"
         }
