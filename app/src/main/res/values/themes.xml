@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.LandApp_yun" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FF9800</item>
-        <item name="colorPrimaryVariant">#F8CE90</item>
+        <item name="colorPrimary">#368539</item>
+        <item name="colorPrimaryVariant">#90CD92</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
